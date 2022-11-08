@@ -6,7 +6,7 @@
 /*   By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 11:05:54 by gmarchal          #+#    #+#             */
-/*   Updated: 2022/11/08 12:55:37 by gmarchal         ###   ########.fr       */
+/*   Updated: 2022/11/08 16:22:44 by gmarchal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,12 +100,11 @@ int	ft_puthexup(unsigned int n)
 	return (count);
 }
 
-int	ft_putptr(unsigned long n)
+int	ft_putptr(unsigned long int n)
 {
 	int	count;
 
-	count = 2;
-	write(1, "0x", 1);
+	count = 0;
 	if (n < 16)
 	{
 		if (n < 10)

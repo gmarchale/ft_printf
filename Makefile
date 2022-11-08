@@ -6,7 +6,7 @@
 #    By: gmarchal <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/03 12:24:22 by gmarchal          #+#    #+#              #
-#    Updated: 2022/11/08 12:52:56 by gmarchal         ###   ########.fr        #
+#    Updated: 2022/11/08 16:07:51 by gmarchal         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,9 +34,6 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
 all: $(NAME)
-
-bonus: $(OBJ)
-	$(AR) $(NAME) $(OBJ)
 
 clean:
 	$(RM) $(OBJ)
